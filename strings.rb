@@ -53,5 +53,16 @@ name = "Harsha"
 
 p new_name, name
 
-#escaping
+# escaping
 puts "Hello there, it's \"Nithin\""
+
+puts "What is your first name?"
+first_name1 = gets.chomp
+puts "What is your last name?"
+last_name1 = gets.chomp
+
+full_name1 = "#{first_name1} #{last_name1}"
+
+p "Your full_name is #{full_name1}"
+p "Your name has #{full_name1.sub(" ", "").length} letters"
+p "Your name reversed is #{full_name1.reverse!}"
